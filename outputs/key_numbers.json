@@ -1,0 +1,761 @@
+{
+  "n_w1_households": 41554,
+  "n_w2_households": 42152,
+  "n_w1_persons": 215754,
+  "wave2_flag_agreement": 0.9934012200621899,
+  "poverty_rates": {
+    "POOR_OLD": {
+      "unweighted": 0.19513611615245008,
+      "person_weighted": 0.24803127734151467
+    },
+    "POOR": {
+      "unweighted": 0.30204476709013917,
+      "person_weighted": 0.3738940291322475
+    }
+  },
+  "link": {
+    "found_again": 34643,
+    "wave1_households": 41554,
+    "share_found_again": 0.8336862877220003,
+    "replacements_dropped": 2134
+  },
+  "n_poor_w1": 12482,
+  "n_kept": 11146,
+  "retention": 0.8929658708540298,
+  "escape_rate": 0.6936120581374484,
+  "n_escaped": 7731,
+  "n_stayed": 3415,
+  "head_rule_check": {
+    "share_head_tracked": 0.8619235600215324,
+    "head_in_split_1": 0.9937545539710627,
+    "same_outcome": 0.9987509107942125
+  },
+  "transitions": {
+    "poor05_not_poor12": 7731,
+    "poor05_poor12": 3415,
+    "notpoor05_not_poor12": 21084,
+    "notpoor05_poor12": 2327
+  },
+  "pct_nonpoor_fell": 0.09939771902097305,
+  "n_matched_all": 34557,
+  "near_line": {
+    "within_10_all_poor": 0.20189072264060245,
+    "within_10_modelled": 0.19773909922842275,
+    "poor12_just_below": 0.20108205590622183,
+    "n_just_below": 1109,
+    "poor12_just_above": 0.21152115211521152,
+    "n_just_above": 1111
+  },
+  "illness_villages": {
+    "villages": 2474,
+    "none_listed": 261,
+    "expected_by_chance": 59.25353959971328,
+    "share_households_with_illness": 0.2615873321461231
+  },
+  "n_features": 137,
+  "n_numeric": 118,
+  "n_nominal": 19,
+  "n_psu": 1983,
+  "dropped_missing": [
+    "ID20"
+  ],
+  "attrition_auc": 0.7008399363078149,
+  "attrition_max_smd": 0.565080598472252,
+  "n_train": 8894,
+  "n_test": 2252,
+  "n_train_villages": 1586,
+  "n_test_villages": 397,
+  "feature_selection": {
+    "table": [
+      {
+        "Features kept": 10,
+        "Cross-validated ROC-AUC": 0.6638,
+        "Test ROC-AUC": 0.6928
+      },
+      {
+        "Features kept": 20,
+        "Cross-validated ROC-AUC": 0.6861,
+        "Test ROC-AUC": 0.708
+      },
+      {
+        "Features kept": 40,
+        "Cross-validated ROC-AUC": 0.6935,
+        "Test ROC-AUC": 0.7169
+      },
+      {
+        "Features kept": 80,
+        "Cross-validated ROC-AUC": 0.6991,
+        "Test ROC-AUC": 0.7211
+      },
+      {
+        "Features kept": 137,
+        "Cross-validated ROC-AUC": 0.6964,
+        "Test ROC-AUC": 0.722
+      }
+    ],
+    "top10": [
+      "STATEID2",
+      "GROUPS8",
+      "ID13",
+      "ID15",
+      "HQ5",
+      "HQ6",
+      "HQ4",
+      "HQ1",
+      "FU9",
+      "HHASSETS"
+    ]
+  },
+  "paired_differences": [
+    {
+      "model_a": "XGBoost",
+      "model_b": "Logistic Regression",
+      "difference": 0.022203154980576567,
+      "ci_low": 0.009891048584684228,
+      "ci_high": 0.03462829559710677
+    },
+    {
+      "model_a": "Random Forest",
+      "model_b": "Logistic Regression",
+      "difference": 0.008857011422758743,
+      "ci_low": -0.006928514587016985,
+      "ci_high": 0.025208300102978747
+    },
+    {
+      "model_a": "XGBoost",
+      "model_b": "Random Forest",
+      "difference": 0.013346143557817824,
+      "ci_low": 0.0026131412008131016,
+      "ci_high": 0.023765611759022753
+    },
+    {
+      "model_a": "Soft-vote ensemble (LR+RF+XGB)",
+      "model_b": "Logistic Regression",
+      "difference": 0.018888601954670015,
+      "ci_low": 0.010690460606950059,
+      "ci_high": 0.027256988425391572
+    },
+    {
+      "model_a": "Soft-vote ensemble (LR+RF+XGB)",
+      "model_b": "XGBoost",
+      "difference": -0.0033145530259065525,
+      "ci_low": -0.009056310860187775,
+      "ci_high": 0.001896372531659564
+    },
+    {
+      "model_a": "Soft-vote ensemble (LR+RF+XGB)",
+      "model_b": "Random Forest",
+      "difference": 0.010031590531911272,
+      "ci_low": 0.000921471576551769,
+      "ci_high": 0.01878914117954157
+    }
+  ],
+  "best_model": "XGBoost",
+  "best_single": "XGBoost",
+  "results": [
+    {
+      "Model": "XGBoost",
+      "ROC_AUC": 0.722,
+      "PR_AUC_escaped": 0.8441,
+      "PR_AUC_stayed_poor": 0.5561,
+      "Brier": 0.1833,
+      "Accuracy": 0.6963,
+      "Balanced_acc": 0.6596,
+      "Macro_F1": 0.6541,
+      "MCC": 0.3103,
+      "Precision_escaped": 0.7958,
+      "Recall_escaped": 0.755,
+      "Precision_stayed": 0.5058,
+      "Recall_stayed": 0.5642,
+      "Threshold": 0.645,
+      "ROC_AUC_CI": "[0.694, 0.750]"
+    },
+    {
+      "Model": "Soft-vote ensemble (LR+RF+XGB)",
+      "ROC_AUC": 0.7187,
+      "PR_AUC_escaped": 0.8411,
+      "PR_AUC_stayed_poor": 0.5546,
+      "Brier": 0.1842,
+      "Accuracy": 0.6949,
+      "Balanced_acc": 0.6494,
+      "Macro_F1": 0.6471,
+      "MCC": 0.2947,
+      "Precision_escaped": 0.7865,
+      "Recall_escaped": 0.7678,
+      "Precision_stayed": 0.5041,
+      "Recall_stayed": 0.531,
+      "Threshold": 0.635,
+      "ROC_AUC_CI": "[0.689, 0.747]"
+    },
+    {
+      "Model": "Random Forest",
+      "ROC_AUC": 0.7087,
+      "PR_AUC_escaped": 0.8363,
+      "PR_AUC_stayed_poor": 0.5362,
+      "Brier": 0.1871,
+      "Accuracy": 0.6927,
+      "Balanced_acc": 0.6482,
+      "Macro_F1": 0.6455,
+      "MCC": 0.2916,
+      "Precision_escaped": 0.7861,
+      "Recall_escaped": 0.764,
+      "Precision_stayed": 0.5007,
+      "Recall_stayed": 0.5325,
+      "Threshold": 0.65,
+      "ROC_AUC_CI": "[0.679, 0.738]"
+    },
+    {
+      "Model": "Logistic Regression",
+      "ROC_AUC": 0.6998,
+      "PR_AUC_escaped": 0.826,
+      "PR_AUC_stayed_poor": 0.5266,
+      "Brier": 0.1889,
+      "Accuracy": 0.6776,
+      "Balanced_acc": 0.6433,
+      "Macro_F1": 0.6364,
+      "MCC": 0.2764,
+      "Precision_escaped": 0.787,
+      "Recall_escaped": 0.7325,
+      "Precision_stayed": 0.4794,
+      "Recall_stayed": 0.5541,
+      "Threshold": 0.64,
+      "ROC_AUC_CI": "[0.670, 0.730]"
+    },
+    {
+      "Model": "Dummy (predict prior)",
+      "ROC_AUC": 0.487,
+      "PR_AUC_escaped": 0.6911,
+      "PR_AUC_stayed_poor": 0.3052,
+      "Brier": 0.213,
+      "Accuracy": 0.6923,
+      "Balanced_acc": 0.5,
+      "Macro_F1": 0.4091,
+      "MCC": 0.0,
+      "Precision_escaped": 0.6923,
+      "Recall_escaped": 1.0,
+      "Precision_stayed": 0.0,
+      "Recall_stayed": 0.0,
+      "Threshold": 0.5,
+      "ROC_AUC_CI": NaN
+    }
+  ],
+  "full_metrics": [
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.6776,
+      "Precision (escaped)": 0.787,
+      "Recall (escaped)": 0.7325,
+      "F1 (escaped)": 0.7588,
+      "Precision (stayed poor)": 0.4794,
+      "Recall (stayed poor)": 0.5541,
+      "F1 (stayed poor)": 0.5141,
+      "Macro-F1": 0.6364,
+      "ROC-AUC": 0.6998,
+      "True stayed": 384,
+      "False escaped": 309,
+      "False stayed": 417,
+      "True escaped": 1142
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.6927,
+      "Precision (escaped)": 0.7861,
+      "Recall (escaped)": 0.764,
+      "F1 (escaped)": 0.7749,
+      "Precision (stayed poor)": 0.5007,
+      "Recall (stayed poor)": 0.5325,
+      "F1 (stayed poor)": 0.5161,
+      "Macro-F1": 0.6455,
+      "ROC-AUC": 0.7087,
+      "True stayed": 369,
+      "False escaped": 324,
+      "False stayed": 368,
+      "True escaped": 1191
+    },
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.6963,
+      "Precision (escaped)": 0.7958,
+      "Recall (escaped)": 0.755,
+      "F1 (escaped)": 0.7749,
+      "Precision (stayed poor)": 0.5058,
+      "Recall (stayed poor)": 0.5642,
+      "F1 (stayed poor)": 0.5334,
+      "Macro-F1": 0.6541,
+      "ROC-AUC": 0.722,
+      "True stayed": 391,
+      "False escaped": 302,
+      "False stayed": 382,
+      "True escaped": 1177
+    },
+    {
+      "Model": "Soft-vote ensemble (LR+RF+XGB)",
+      "Accuracy": 0.6949,
+      "Precision (escaped)": 0.7865,
+      "Recall (escaped)": 0.7678,
+      "F1 (escaped)": 0.777,
+      "Precision (stayed poor)": 0.5041,
+      "Recall (stayed poor)": 0.531,
+      "F1 (stayed poor)": 0.5172,
+      "Macro-F1": 0.6471,
+      "ROC-AUC": 0.7187,
+      "True stayed": 368,
+      "False escaped": 325,
+      "False stayed": 362,
+      "True escaped": 1197
+    }
+  ],
+  "confusion_matrices": {
+    "Logistic Regression": [
+      [
+        384,
+        309
+      ],
+      [
+        417,
+        1142
+      ]
+    ],
+    "Random Forest": [
+      [
+        369,
+        324
+      ],
+      [
+        368,
+        1191
+      ]
+    ],
+    "XGBoost": [
+      [
+        391,
+        302
+      ],
+      [
+        382,
+        1177
+      ]
+    ],
+    "Soft-vote ensemble (LR+RF+XGB)": [
+      [
+        368,
+        325
+      ],
+      [
+        362,
+        1197
+      ]
+    ]
+  },
+  "overfitting_check": [
+    {
+      "Model": "Logistic Regression",
+      "Train ROC-AUC": 0.7306,
+      "Cross-validated ROC-AUC": 0.6876,
+      "Test ROC-AUC": 0.6998
+    },
+    {
+      "Model": "Random Forest",
+      "Train ROC-AUC": 0.9879,
+      "Cross-validated ROC-AUC": 0.6849,
+      "Test ROC-AUC": 0.7087
+    },
+    {
+      "Model": "XGBoost",
+      "Train ROC-AUC": 0.8506,
+      "Cross-validated ROC-AUC": 0.6964,
+      "Test ROC-AUC": 0.722
+    }
+  ],
+  "lift": [
+    {
+      "quintile": "Q1 (lowest risk)",
+      "households": 451,
+      "stayed_poor_rate": 0.1131,
+      "lift_vs_average": 0.3675,
+      "share_of_all_stayed_poor": 0.0736
+    },
+    {
+      "quintile": "Q2",
+      "households": 450,
+      "stayed_poor_rate": 0.2067,
+      "lift_vs_average": 0.6716,
+      "share_of_all_stayed_poor": 0.1342
+    },
+    {
+      "quintile": "Q3",
+      "households": 450,
+      "stayed_poor_rate": 0.2467,
+      "lift_vs_average": 0.8016,
+      "share_of_all_stayed_poor": 0.1602
+    },
+    {
+      "quintile": "Q4",
+      "households": 450,
+      "stayed_poor_rate": 0.3978,
+      "lift_vs_average": 1.2926,
+      "share_of_all_stayed_poor": 0.2583
+    },
+    {
+      "quintile": "Q5 (highest risk)",
+      "households": 451,
+      "stayed_poor_rate": 0.5743,
+      "lift_vs_average": 1.8662,
+      "share_of_all_stayed_poor": 0.3737
+    }
+  ],
+  "calibration": [
+    {
+      "Model": "Logistic Regression",
+      "mean_predicted": 0.6893,
+      "observed_rate": 0.6923,
+      "Brier": 0.1889,
+      "calib_intercept": 0.0975,
+      "calib_slope": 0.8814,
+      "Brier_skill_score": 0.1134
+    },
+    {
+      "Model": "Random Forest",
+      "mean_predicted": 0.6874,
+      "observed_rate": 0.6923,
+      "Brier": 0.1871,
+      "calib_intercept": -0.1209,
+      "calib_slope": 1.2044,
+      "Brier_skill_score": 0.1216
+    },
+    {
+      "Model": "XGBoost",
+      "mean_predicted": 0.6898,
+      "observed_rate": 0.6923,
+      "Brier": 0.1833,
+      "calib_intercept": -0.0342,
+      "calib_slope": 1.0676,
+      "Brier_skill_score": 0.1394
+    },
+    {
+      "Model": "Soft-vote ensemble (LR+RF+XGB)",
+      "mean_predicted": 0.6888,
+      "observed_rate": 0.6923,
+      "Brier": 0.1842,
+      "calib_intercept": -0.0938,
+      "calib_slope": 1.1598,
+      "Brier_skill_score": 0.1352
+    }
+  ],
+  "shap_top10": [
+    {
+      "variable": "n_children_0_5",
+      "mean_abs_SHAP": 0.19020000100135803,
+      "label": "Children aged 0-5",
+      "group": "Household structure"
+    },
+    {
+      "variable": "STATEID2",
+      "mean_abs_SHAP": 0.18449999392032623,
+      "label": "State (22 groups)",
+      "group": "Geography & social group"
+    },
+    {
+      "variable": "HHASSETS",
+      "mean_abs_SHAP": 0.18070000410079956,
+      "label": "Household assets index (goods and housing)",
+      "group": "Assets & housing"
+    },
+    {
+      "variable": "assets_per_capita",
+      "mean_abs_SHAP": 0.1459999978542328,
+      "label": "Asset index per household member",
+      "group": "Assets & housing"
+    },
+    {
+      "variable": "RC1A",
+      "mean_abs_SHAP": 0.0925000011920929,
+      "label": "Ration card type",
+      "group": "Access to services"
+    },
+    {
+      "variable": "GROUPS8",
+      "mean_abs_SHAP": 0.08389999717473984,
+      "label": "Caste/religion group (8 categories)",
+      "group": "Geography & social group"
+    },
+    {
+      "variable": "has_school_age_kids",
+      "mean_abs_SHAP": 0.07039999961853027,
+      "label": "Household has children aged 6-14",
+      "group": "Household structure"
+    },
+    {
+      "variable": "share_female",
+      "mean_abs_SHAP": 0.06639999896287918,
+      "label": "Share of members who are female",
+      "group": "Household structure"
+    },
+    {
+      "variable": "head_age",
+      "mean_abs_SHAP": 0.06560000032186508,
+      "label": "Age of household head",
+      "group": "Household structure"
+    },
+    {
+      "variable": "FU9",
+      "mean_abs_SHAP": 0.04879999905824661,
+      "label": "LPG use",
+      "group": "Access to services"
+    }
+  ],
+  "shap_group_share": {
+    "Household structure": 0.23199999332427979,
+    "Assets & housing": 0.23199999332427979,
+    "Geography & social group": 0.14000000059604645,
+    "Access to services": 0.13099999725818634,
+    "Occupation & employment": 0.0949999988079071,
+    "Education": 0.07100000232458115,
+    "Women's status (gender)": 0.03799999877810478,
+    "Social capital": 0.026000000536441803,
+    "Finance & social protection": 0.023000000044703484,
+    "Health": 0.012000000104308128
+  },
+  "shap_group_per_variable": {
+    "Household structure": 0.0145,
+    "Assets & housing": 0.0068,
+    "Geography & social group": 0.02,
+    "Access to services": 0.0082,
+    "Occupation & employment": 0.005,
+    "Education": 0.0064,
+    "Women's status (gender)": 0.0064,
+    "Social capital": 0.0018,
+    "Finance & social protection": 0.0025,
+    "Health": 0.003
+  },
+  "feature_sets": [
+    {
+      "Feature set": "Final feature set (structural, no consumption/income)",
+      "n_features": 137,
+      "LR CV AUC": 0.688,
+      "LR test AUC": 0.6998,
+      "XGB CV AUC": 0.6966,
+      "XGB test AUC": 0.722
+    },
+    {
+      "Feature set": "+ village-survey infrastructure (rural only)",
+      "n_features": 161,
+      "LR CV AUC": 0.6865,
+      "LR test AUC": 0.6988,
+      "XGB CV AUC": 0.6939,
+      "XGB test AUC": 0.7223
+    },
+    {
+      "Feature set": "+ village-mates context (leave-one-out)",
+      "n_features": 143,
+      "LR CV AUC": 0.6866,
+      "LR test AUC": 0.6996,
+      "XGB CV AUC": 0.6924,
+      "XGB test AUC": 0.7161
+    },
+    {
+      "Feature set": "ABLATION: + consumption gap, income, village poverty rate",
+      "n_features": 140,
+      "LR CV AUC": 0.6928,
+      "LR test AUC": 0.7002,
+      "XGB CV AUC": 0.7003,
+      "XGB test AUC": 0.7187
+    }
+  ],
+  "gap_alone_auc": 0.6015431209712073,
+  "sensitivity": [
+    {
+      "Target rule": "Primary: continuing household (HHSPLITID=1)",
+      "n": 11146,
+      "Escape rate": 0.6936,
+      "ROC_AUC (test)": 0.722
+    },
+    {
+      "Target rule": "Escaped only if ALL descendant households non-poor",
+      "n": 11146,
+      "Escape rate": 0.666,
+      "ROC_AUC (test)": 0.7271
+    },
+    {
+      "Target rule": "Escaped if ANY descendant household non-poor",
+      "n": 11146,
+      "Escape rate": 0.7163,
+      "ROC_AUC (test)": 0.7205
+    }
+  ],
+  "ipw": {
+    "escape_rate_raw": 0.6936120581374484,
+    "escape_rate_ipw": 0.6974829135405605,
+    "auc_raw": 0.7237487787026998,
+    "auc_ipw": 0.7186556689146845
+  },
+  "old_line": [
+    {
+      "Model": "Logistic Regression",
+      "households (deeper poor)": 7080,
+      "escape rate (deeper poor)": 0.6569,
+      "AUC: main model": 0.6953,
+      "AUC: refitted on deeper poor": 0.6848
+    },
+    {
+      "Model": "XGBoost",
+      "households (deeper poor)": 7080,
+      "escape rate (deeper poor)": 0.6569,
+      "AUC: main model": 0.714,
+      "AUC: refitted on deeper poor": 0.6966
+    }
+  ],
+  "survey_weights": {
+    "escape_rate_unweighted": 0.6936120581374484,
+    "escape_rate_weighted": 0.6821667673801497,
+    "effective_n": 5581.3410583117475,
+    "auc": [
+      {
+        "Model": "Logistic Regression",
+        "AUC unweighted": 0.6998,
+        "AUC weighted": 0.6681
+      },
+      {
+        "Model": "Random Forest",
+        "AUC unweighted": 0.7087,
+        "AUC weighted": 0.6893
+      },
+      {
+        "Model": "XGBoost",
+        "AUC unweighted": 0.722,
+        "AUC weighted": 0.7012
+      },
+      {
+        "Model": "Soft-vote ensemble (LR+RF+XGB)",
+        "AUC unweighted": 0.7187,
+        "AUC weighted": 0.6946
+      }
+    ]
+  },
+  "repeated_splits": [
+    {
+      "Model": "Logistic Regression",
+      "mean": 0.7007,
+      "std": 0.0136,
+      "min": 0.6787,
+      "max": 0.7331,
+      "best_in_n_splits": 0
+    },
+    {
+      "Model": "Random Forest",
+      "mean": 0.6957,
+      "std": 0.0163,
+      "min": 0.6666,
+      "max": 0.7243,
+      "best_in_n_splits": 0
+    },
+    {
+      "Model": "XGBoost",
+      "mean": 0.7096,
+      "std": 0.0148,
+      "min": 0.6821,
+      "max": 0.7374,
+      "best_in_n_splits": 5
+    },
+    {
+      "Model": "Soft-vote ensemble (LR+RF+XGB)",
+      "mean": 0.7108,
+      "std": 0.015,
+      "min": 0.6853,
+      "max": 0.7414,
+      "best_in_n_splits": 15
+    }
+  ],
+  "ration_card": [
+    {
+      "Model": "Logistic Regression",
+      "AUC with ration card": 0.6998,
+      "AUC without ration card": 0.6964
+    },
+    {
+      "Model": "XGBoost",
+      "AUC with ration card": 0.722,
+      "AUC without ration card": 0.7148
+    }
+  ],
+  "random_vs_village": {
+    "random_mean": 0.7083329705347621,
+    "random_sd": 0.0092979230094853,
+    "village_mean": 0.709558093363402,
+    "village_sd": 0.014751416628662271
+  },
+  "education": {
+    "A: baseline characteristics": {
+      "raw": {
+        "estimate": 0.1105306914969415,
+        "ci_low": 0.08710490266976545,
+        "ci_high": 0.13024847722647676
+      },
+      "regression": {
+        "estimate": 0.06382588767586694,
+        "ci_low": 0.040798586700409104,
+        "ci_high": 0.0826458930636216
+      },
+      "ipw": {
+        "estimate": 0.0635903563100717,
+        "ci_low": 0.03675158636073421,
+        "ci_high": 0.08668811643046324
+      },
+      "doubly_robust": {
+        "estimate": 0.06317022135915157,
+        "ci_low": 0.038840028881968976,
+        "ci_high": 0.08667555462318234,
+        "risk_ratio": 1.087841009891913,
+        "e_value": 1.396964048358385,
+        "e_value_ci_limit": 1.2866992587164228
+      },
+      "matching": {
+        "estimate": 0.08098271155595993,
+        "matched_share": 0.9968253968253968
+      },
+      "max_smd_before": 0.7771458327640592,
+      "max_smd_after_ipw": 0.1160690493485326
+    },
+    "B: A + baseline poverty gap": {
+      "raw": {
+        "estimate": 0.1105306914969415,
+        "ci_low": 0.08710490266976545,
+        "ci_high": 0.13024847722647676
+      },
+      "regression": {
+        "estimate": 0.052056176337845095,
+        "ci_low": 0.027655267505191074,
+        "ci_high": 0.07077086390423155
+      },
+      "ipw": {
+        "estimate": 0.0553286360173002,
+        "ci_low": 0.029562376378750685,
+        "ci_high": 0.07890711313428458
+      },
+      "doubly_robust": {
+        "estimate": 0.05405114740920854,
+        "ci_low": 0.02902562185214447,
+        "ci_high": 0.07773180582159865,
+        "risk_ratio": 1.0742193934376127,
+        "e_value": 1.356580707713949,
+        "e_value_ci_limit": 1.2385735649922818
+      },
+      "matching": {
+        "estimate": 0.06412005457025916,
+        "matched_share": 0.9972789115646259
+      },
+      "max_smd_before": 0.7771458327640592,
+      "max_smd_after_ipw": 0.12397056264376145
+    },
+    "n_treated": 2205,
+    "n_control": 8927
+  },
+  "versions": {
+    "python": "3.11.9",
+    "numpy": "2.0.2",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.5.2",
+    "xgboost": "2.1.3",
+    "shap": "0.46.0"
+  }
+}

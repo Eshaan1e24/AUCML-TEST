@@ -1,0 +1,4 @@
+Model,Train ROC-AUC,Cross-validated ROC-AUC,Test ROC-AUC
+Logistic Regression,0.7306,0.6876,0.6998
+Random Forest,0.9879,0.6849,0.7087
+XGBoost,0.8506,0.6964,0.722

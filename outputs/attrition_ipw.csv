@@ -1,0 +1,3 @@
+,Escape rate,XGBoost test AUC (IPW-weighted evaluation)
+Unweighted model / raw sample,0.6936,0.7237
+IPW-weighted model / re-weighted sample,0.6975,0.7187

@@ -1,0 +1,3 @@
+Model,households (deeper poor),escape rate (deeper poor),AUC: main model,AUC: refitted on deeper poor
+Logistic Regression,7080,0.6569,0.6953,0.6848
+XGBoost,7080,0.6569,0.714,0.6966

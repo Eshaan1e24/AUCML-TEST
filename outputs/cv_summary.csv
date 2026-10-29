@@ -1,0 +1,4 @@
+Model,CV ROC-AUC (mean),CV ROC-AUC (sd),Best params
+Logistic Regression,0.6875752848885938,0.013040709772331242,{'C': np.float64(0.1)}
+Random Forest,0.6849236323540693,0.01949141249263038,"{'min_samples_leaf': 3, 'max_features': 0.4, 'max_depth': 12}"
+XGBoost,0.6964033417472872,0.01602588090367039,"{'subsample': 0.85, 'reg_lambda': 5, 'n_estimators': 600, 'min_child_weight': 10, 'max_depth': 5, 'learning_rate': 0.02, 'colsample_bytree': 0.7}"

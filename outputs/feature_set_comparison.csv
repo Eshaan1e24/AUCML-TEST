@@ -1,0 +1,5 @@
+Feature set,n_features,LR CV AUC,LR test AUC,XGB CV AUC,XGB test AUC
+"Final feature set (structural, no consumption/income)",137,0.688,0.6998,0.6966,0.722
++ village-survey infrastructure (rural only),161,0.6865,0.6988,0.6939,0.7223
++ village-mates context (leave-one-out),143,0.6866,0.6996,0.6924,0.7161
+"ABLATION: + consumption gap, income, village poverty rate",140,0.6928,0.7002,0.7003,0.7187

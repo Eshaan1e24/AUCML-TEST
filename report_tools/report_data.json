@@ -1,0 +1,1746 @@
+{
+ "n_w1": "41,554",
+ "n_w2": "42,152",
+ "n_persons": "215,754",
+ "n_poor_w1": "12,482",
+ "n_kept": "11,146",
+ "retention": "89.3%",
+ "n_escaped": "7,731",
+ "n_stayed": "3,415",
+ "escape": "69.4%",
+ "fell": "9.9%",
+ "n_features": 137,
+ "n_numeric": 118,
+ "n_nominal": 19,
+ "n_train": "8,894",
+ "n_test": "2,252",
+ "n_train_vill": "1,586",
+ "n_test_vill": "397",
+ "link": {
+  "found": "34,643",
+  "of": "41,554",
+  "share": "83.4%"
+ },
+ "w2agree": "99.3%",
+ "pov_old_pw": "25%",
+ "pov_new_pw": "37%",
+ "head_tracked": "86%",
+ "head_same": "99.9%",
+ "near": {
+  "all": "20%",
+  "below": "20%",
+  "above": "21%"
+ },
+ "ill": {
+  "vill": "2,474",
+  "none": "261",
+  "exp": "59"
+ },
+ "ration": {
+  "Logistic Regression": [
+   "0.700",
+   "0.696"
+  ],
+  "XGBoost": [
+   "0.722",
+   "0.715"
+  ]
+ },
+ "caste": {
+  "Adivasi": [
+   "53%",
+   "1,722"
+  ],
+  "Brahmin": [
+   "81%",
+   "249"
+  ],
+  "Christian": [
+   "78%",
+   "101"
+  ],
+  "Dalit": [
+   "68%",
+   "2,853"
+  ],
+  "High caste": [
+   "80%",
+   "956"
+  ],
+  "Muslim": [
+   "72%",
+   "1,465"
+  ],
+  "OBC": [
+   "73%",
+   "3,777"
+  ],
+  "Sikh/Jain": [
+   "87%",
+   "23"
+  ]
+ },
+ "educ": {
+  "None": [
+   "63%",
+   "3,618"
+  ],
+  "1-4 yrs": [
+   "65%",
+   "1,284"
+  ],
+  "5-9 yrs": [
+   "72%",
+   "4,025"
+  ],
+  "10-12 yrs": [
+   "77%",
+   "1,740"
+  ],
+  "13+ yrs": [
+   "83%",
+   "465"
+  ]
+ },
+ "area": {
+  "Rural": "68%",
+  "Urban": "75%"
+ },
+ "assets": {
+  "Low": "60%",
+  "Middle": "71%",
+  "High": "80%"
+ },
+ "bh_combined": "80%",
+ "models": [
+  [
+   "XGBoost",
+   "0.722 (0.694 to 0.750)",
+   "0.696",
+   "0.654",
+   "0.310",
+   "0.183"
+  ],
+  [
+   "Soft-voting ensemble",
+   "0.719 (0.689 to 0.747)",
+   "0.695",
+   "0.647",
+   "0.295",
+   "0.184"
+  ],
+  [
+   "Random Forest",
+   "0.709 (0.679 to 0.738)",
+   "0.693",
+   "0.645",
+   "0.292",
+   "0.187"
+  ],
+  [
+   "Logistic Regression",
+   "0.700 (0.670 to 0.730)",
+   "0.678",
+   "0.636",
+   "0.276",
+   "0.189"
+  ],
+  [
+   "Dummy baseline",
+   "0.487",
+   "0.692",
+   "0.409",
+   "0.000",
+   "0.213"
+  ]
+ ],
+ "perclass": [
+  [
+   "Logistic Regression",
+   "0.678",
+   "0.787",
+   "0.733",
+   "0.759",
+   "0.479",
+   "0.554",
+   "0.514"
+  ],
+  [
+   "Random Forest",
+   "0.693",
+   "0.786",
+   "0.764",
+   "0.775",
+   "0.501",
+   "0.532",
+   "0.516"
+  ],
+  [
+   "XGBoost",
+   "0.696",
+   "0.796",
+   "0.755",
+   "0.775",
+   "0.506",
+   "0.564",
+   "0.533"
+  ],
+  [
+   "Ensemble",
+   "0.695",
+   "0.786",
+   "0.768",
+   "0.777",
+   "0.504",
+   "0.531",
+   "0.517"
+  ]
+ ],
+ "cv": {
+  "Logistic Regression": "0.688",
+  "Random Forest": "0.685",
+  "XGBoost": "0.696"
+ },
+ "pair_ens_xgb": [
+  "-0.0033",
+  "-0.0091",
+  "+0.0019"
+ ],
+ "pair_ens_xgb_abs": "0.003",
+ "pair_xgb_lr": "+0.022",
+ "pair_xgb_rf": "+0.013",
+ "pair_ens_lr": "+0.019",
+ "pair_ens_rf": "+0.010",
+ "rep": {
+  "Logistic Regression": [
+   "0.701",
+   "0.014",
+   "0.679",
+   "0.733",
+   0
+  ],
+  "Random Forest": [
+   "0.696",
+   "0.016",
+   "0.667",
+   "0.724",
+   0
+  ],
+  "XGBoost": [
+   "0.710",
+   "0.015",
+   "0.682",
+   "0.737",
+   5
+  ],
+  "Soft-vote ensemble (LR+RF+XGB)": [
+   "0.711",
+   "0.015",
+   "0.685",
+   "0.741",
+   15
+  ]
+ },
+ "cal": {
+  "Logistic Regression": [
+   "0.689",
+   "0.692",
+   "0.189",
+   "0.88",
+   "0.113"
+  ],
+  "Random Forest": [
+   "0.687",
+   "0.692",
+   "0.187",
+   "1.20",
+   "0.122"
+  ],
+  "XGBoost": [
+   "0.690",
+   "0.692",
+   "0.183",
+   "1.07",
+   "0.139"
+  ],
+  "Soft-vote ensemble (LR+RF+XGB)": [
+   "0.689",
+   "0.692",
+   "0.184",
+   "1.16",
+   "0.135"
+  ]
+ },
+ "cm": [
+  [
+   391,
+   302
+  ],
+  [
+   382,
+   1177
+  ]
+ ],
+ "thr": "0.645",
+ "head_res": {
+  "ROC_AUC": "0.722",
+  "Recall_escaped": "0.755",
+  "Precision_escaped": "0.796",
+  "Recall_stayed": "0.564",
+  "Precision_stayed": "0.506",
+  "Macro_F1": "0.654",
+  "MCC": "0.310",
+  "Brier": "0.183",
+  "Accuracy": "0.696"
+ },
+ "lift": [
+  [
+   "Q1 (lowest risk)",
+   "451",
+   "11%",
+   "0.37",
+   "7%"
+  ],
+  [
+   "Q2",
+   "450",
+   "21%",
+   "0.67",
+   "13%"
+  ],
+  [
+   "Q3",
+   "450",
+   "25%",
+   "0.80",
+   "16%"
+  ],
+  [
+   "Q4",
+   "450",
+   "40%",
+   "1.29",
+   "26%"
+  ],
+  [
+   "Q5 (highest risk)",
+   "451",
+   "57%",
+   "1.87",
+   "37%"
+  ]
+ ],
+ "avg_stay": "31%",
+ "top40": "63%",
+ "q5": "57%",
+ "q5lift": "1.9",
+ "q1": "11%",
+ "shap_top": [
+  [
+   "n_children_0_5",
+   "Children aged 0-5",
+   "0.190",
+   "Household structure"
+  ],
+  [
+   "STATEID2",
+   "State (22 groups)",
+   "0.185",
+   "Geography & social group"
+  ],
+  [
+   "HHASSETS",
+   "Household assets index (goods and housing)",
+   "0.181",
+   "Assets & housing"
+  ],
+  [
+   "assets_per_capita",
+   "Asset index per household member",
+   "0.146",
+   "Assets & housing"
+  ],
+  [
+   "RC1A",
+   "Ration card type",
+   "0.093",
+   "Access to services"
+  ],
+  [
+   "GROUPS8",
+   "Caste/religion group (8 categories)",
+   "0.084",
+   "Geography & social group"
+  ],
+  [
+   "has_school_age_kids",
+   "Household has children aged 6-14",
+   "0.070",
+   "Household structure"
+  ],
+  [
+   "share_female",
+   "Share of members who are female",
+   "0.066",
+   "Household structure"
+  ],
+  [
+   "head_age",
+   "Age of household head",
+   "0.066",
+   "Household structure"
+  ],
+  [
+   "FU9",
+   "LPG use",
+   "0.049",
+   "Access to services"
+  ]
+ ],
+ "shap_grp": {
+  "Household structure": "23.2%",
+  "Assets & housing": "23.2%",
+  "Geography & social group": "14.0%",
+  "Access to services": "13.1%",
+  "Occupation & employment": "9.5%",
+  "Education": "7.1%",
+  "Women's status (gender)": "3.8%",
+  "Social capital": "2.6%",
+  "Finance & social protection": "2.3%",
+  "Health": "1.2%"
+ },
+ "edu": {
+  "n_treated": "2,205",
+  "n_control": "8,927",
+  "A": {
+   "raw": [
+    "11.1",
+    "8.7",
+    "13.0"
+   ],
+   "regression": [
+    "6.4",
+    "4.1",
+    "8.3"
+   ],
+   "ipw": [
+    "6.4",
+    "3.7",
+    "8.7"
+   ],
+   "doubly_robust": [
+    "6.3",
+    "3.9",
+    "8.7"
+   ]
+  },
+  "B": {
+   "raw": [
+    "11.1",
+    "8.7",
+    "13.0"
+   ],
+   "regression": [
+    "5.2",
+    "2.8",
+    "7.1"
+   ],
+   "ipw": [
+    "5.5",
+    "3.0",
+    "7.9"
+   ],
+   "doubly_robust": [
+    "5.4",
+    "2.9",
+    "7.8"
+   ]
+  },
+  "matchA": "8.1",
+  "evalA": "1.40",
+  "evalA_ci": "1.29",
+  "smd_before": "0.78",
+  "smd_after": "0.12"
+ },
+ "edu_int": [
+  "2.9",
+  "8.7"
+ ],
+ "rob": {
+  "fs": [
+   [
+    "Final feature set (structural, no consumption/income)",
+    "137",
+    "0.688",
+    "0.700",
+    "0.697",
+    "0.722"
+   ],
+   [
+    "+ village-survey infrastructure (rural only)",
+    "161",
+    "0.686",
+    "0.699",
+    "0.694",
+    "0.722"
+   ],
+   [
+    "+ village-mates context (leave-one-out)",
+    "143",
+    "0.687",
+    "0.700",
+    "0.692",
+    "0.716"
+   ],
+   [
+    "ABLATION: + consumption gap, income, village poverty rate",
+    "140",
+    "0.693",
+    "0.700",
+    "0.700",
+    "0.719"
+   ]
+  ],
+  "all": [
+   "66.6%",
+   "0.727"
+  ],
+  "any": [
+   "71.6%",
+   "0.721"
+  ],
+  "ipw": [
+   "69.4%",
+   "69.7%"
+  ],
+  "old": [
+   "7,080",
+   "65.7%",
+   "0.714",
+   "0.695"
+  ],
+  "sw": [
+   "68.2%",
+   "5,581",
+   "0.701"
+  ],
+  "gap_alone": "0.602"
+ },
+ "fsel": [
+  [
+   "10",
+   "0.664",
+   "0.693"
+  ],
+  [
+   "20",
+   "0.686",
+   "0.708"
+  ],
+  [
+   "40",
+   "0.694",
+   "0.717"
+  ],
+  [
+   "80",
+   "0.699",
+   "0.721"
+  ],
+  [
+   "137",
+   "0.696",
+   "0.722"
+  ]
+ ],
+ "fsel_top10": [
+  "STATEID2",
+  "GROUPS8",
+  "ID13",
+  "ID15",
+  "HQ5",
+  "HQ6",
+  "HQ4",
+  "HQ1",
+  "FU9",
+  "HHASSETS"
+ ],
+ "over": [
+  [
+   "Logistic Regression",
+   "0.731",
+   "0.688",
+   "0.700"
+  ],
+  [
+   "Random Forest",
+   "0.988",
+   "0.685",
+   "0.709"
+  ],
+  [
+   "XGBoost",
+   "0.851",
+   "0.696",
+   "0.722"
+  ]
+ ],
+ "rv": {
+  "random": "0.708",
+  "random_sd": "0.009",
+  "village": "0.710",
+  "village_sd": "0.015"
+ },
+ "miss": [
+  [
+   "School enrolment rate, children 6-14",
+   "35%"
+  ],
+  [
+   "Woman can visit local shop alone",
+   "28%"
+  ],
+  [
+   "Woman's name on a bank account",
+   "26%"
+  ],
+  [
+   "Woman can visit health centre alone",
+   "18%"
+  ],
+  [
+   "Education of interviewed woman (years)",
+   "17%"
+  ],
+  [
+   "Family has a bank account",
+   "16%"
+  ]
+ ],
+ "groups_table": [
+  [
+   "Assets & housing",
+   "34",
+   "28",
+   "6"
+  ],
+  [
+   "Occupation & employment",
+   "19",
+   "18",
+   "1"
+  ],
+  [
+   "Access to services",
+   "16",
+   "11",
+   "5"
+  ],
+  [
+   "Household structure",
+   "16",
+   "15",
+   "1"
+  ],
+  [
+   "Social capital",
+   "15",
+   "15",
+   "0"
+  ],
+  [
+   "Education",
+   "11",
+   "11",
+   "0"
+  ],
+  [
+   "Finance & social protection",
+   "9",
+   "8",
+   "1"
+  ],
+  [
+   "Geography & social group",
+   "7",
+   "2",
+   "5"
+  ],
+  [
+   "Women's status (gender)",
+   "6",
+   "6",
+   "0"
+  ],
+  [
+   "Health",
+   "4",
+   "4",
+   "0"
+  ]
+ ],
+ "dictionary_rows": [
+  [
+   "FU1",
+   "HH electricity",
+   "Access to services",
+   "number",
+   "1%"
+  ],
+  [
+   "FU2",
+   "Meals per day",
+   "Access to services",
+   "number",
+   "1%"
+  ],
+  [
+   "FU4",
+   "HH chulha type",
+   "Access to services",
+   "category",
+   "1%"
+  ],
+  [
+   "FU9",
+   "LPG use",
+   "Access to services",
+   "category",
+   "7%"
+  ],
+  [
+   "MM1A",
+   "Radio regular Men",
+   "Access to services",
+   "number",
+   "3%"
+  ],
+  [
+   "MM1B",
+   "Radio regular Women",
+   "Access to services",
+   "number",
+   "3%"
+  ],
+  [
+   "MM2A",
+   "Newspaper regular Men",
+   "Access to services",
+   "number",
+   "4%"
+  ],
+  [
+   "MM2B",
+   "Newspaper regular Women",
+   "Access to services",
+   "number",
+   "3%"
+  ],
+  [
+   "MM3A",
+   "TV regular Men",
+   "Access to services",
+   "number",
+   "4%"
+  ],
+  [
+   "MM3B",
+   "TV regular Women",
+   "Access to services",
+   "number",
+   "3%"
+  ],
+  [
+   "RC1",
+   "Ration card",
+   "Access to services",
+   "number",
+   "0%"
+  ],
+  [
+   "RC1A",
+   "Ration card type",
+   "Access to services",
+   "category",
+   "15%"
+  ],
+  [
+   "SA4",
+   "Household Toilet",
+   "Access to services",
+   "category",
+   "1%"
+  ],
+  [
+   "WA1",
+   "Water source: usual",
+   "Access to services",
+   "category",
+   "0%"
+  ],
+  [
+   "WA10",
+   "Purify water",
+   "Access to services",
+   "number",
+   "1%"
+  ],
+  [
+   "WA2",
+   "Water within house",
+   "Access to services",
+   "number",
+   "0%"
+  ],
+  [
+   "CG1",
+   "House own/rent",
+   "Assets & housing",
+   "category",
+   "0%"
+  ],
+  [
+   "CG10",
+   "Own: Clock/watch",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG11",
+   "Own: Electric fan",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG12",
+   "Own: Chair/table",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG13",
+   "Own: Cot",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG14",
+   "Own: Telephone",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG15",
+   "Own: Cell phone",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG16",
+   "Own: Refrigerator",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG17",
+   "Own: Pressure cooker",
+   "Assets & housing",
+   "number",
+   "1%"
+  ],
+  [
+   "CG18",
+   "Own: Car",
+   "Assets & housing",
+   "number",
+   "4%"
+  ],
+  [
+   "CG19",
+   "Own: Air conditioner",
+   "Assets & housing",
+   "number",
+   "4%"
+  ],
+  [
+   "CG2",
+   "Own: Cycle/bicycle",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG20",
+   "Own: Washing machine",
+   "Assets & housing",
+   "number",
+   "4%"
+  ],
+  [
+   "CG21",
+   "Own: Computer",
+   "Assets & housing",
+   "number",
+   "4%"
+  ],
+  [
+   "CG22",
+   "Own: Credit card",
+   "Assets & housing",
+   "number",
+   "4%"
+  ],
+  [
+   "CG23",
+   "Own: 2 clothes",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG24",
+   "Own: Footwear",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG3",
+   "Own: Sewing machine",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG4",
+   "Own: Generator set",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG5",
+   "Own: Mixer/grinder",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG6",
+   "Own: Motor cycle",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG7",
+   "Own: B/W TV",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG8",
+   "Own: Colour TV",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "CG9",
+   "Own: Air cooler",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "HHASSETS",
+   "Household assets index (goods and housing)",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "HQ1",
+   "Obs: House Type",
+   "Assets & housing",
+   "category",
+   "1%"
+  ],
+  [
+   "HQ4",
+   "Obs: Wall type",
+   "Assets & housing",
+   "category",
+   "1%"
+  ],
+  [
+   "HQ5",
+   "Obs: Roof type",
+   "Assets & housing",
+   "category",
+   "1%"
+  ],
+  [
+   "HQ6",
+   "Obs: Floor type",
+   "Assets & housing",
+   "category",
+   "1%"
+  ],
+  [
+   "SA1",
+   "Number of rooms",
+   "Assets & housing",
+   "number",
+   "2%"
+  ],
+  [
+   "SA2",
+   "Cooking place",
+   "Assets & housing",
+   "category",
+   "0%"
+  ],
+  [
+   "SA3",
+   "Household servant",
+   "Assets & housing",
+   "number",
+   "1%"
+  ],
+  [
+   "assets_per_capita",
+   "Asset index per household member",
+   "Assets & housing",
+   "number",
+   "0%"
+  ],
+  [
+   "rooms_per_person",
+   "Rooms per household member",
+   "Assets & housing",
+   "number",
+   "2%"
+  ],
+  [
+   "EW7",
+   "Education of interviewed woman (years)",
+   "Education",
+   "number",
+   "17%"
+  ],
+  [
+   "HHED2",
+   "Any adult in household is literate",
+   "Education",
+   "number",
+   "0%"
+  ],
+  [
+   "HHED5ADULT",
+   "Highest education of any adult 21+ (years)",
+   "Education",
+   "number",
+   "0%"
+  ],
+  [
+   "HHED5F",
+   "Highest education of women 21+ (years)",
+   "Education",
+   "number",
+   "1%"
+  ],
+  [
+   "HHED5M",
+   "Highest education of men 21+ (years)",
+   "Education",
+   "number",
+   "5%"
+  ],
+  [
+   "child_enrol_rate",
+   "School enrolment rate, children 6-14",
+   "Education",
+   "number",
+   "35%"
+  ],
+  [
+   "educ_mean_adults",
+   "Mean years of schooling, adults 21+",
+   "Education",
+   "number",
+   "0%"
+  ],
+  [
+   "head_educ_years",
+   "Years of schooling of head",
+   "Education",
+   "number",
+   "0%"
+  ],
+  [
+   "head_literate",
+   "Head is literate",
+   "Education",
+   "number",
+   "0%"
+  ],
+  [
+   "share_female_literate_15p",
+   "Literacy share, women 15+",
+   "Education",
+   "number",
+   "1%"
+  ],
+  [
+   "share_literate_15p",
+   "Literacy share, members 15+",
+   "Education",
+   "number",
+   "0%"
+  ],
+  [
+   "DB1",
+   "N loans last 5 yrs",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "DB3A",
+   "Land sold to pay",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "DB3B",
+   "Jewelery sold to pay",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "DB5A",
+   "Debt with shopkeeper",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "IN15",
+   "Govt housing",
+   "Finance & social protection",
+   "number",
+   "1%"
+  ],
+  [
+   "IN17",
+   "Better off last 10 yrs",
+   "Finance & social protection",
+   "category",
+   "0%"
+  ],
+  [
+   "RC3",
+   "Health insurance",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "RC4",
+   "LIC/Life insurance",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "RC5",
+   "KISAN credit card",
+   "Finance & social protection",
+   "number",
+   "0%"
+  ],
+  [
+   "GROUPS8",
+   "Caste/religion group (8 categories)",
+   "Geography & social group",
+   "category",
+   "0%"
+  ],
+  [
+   "ID13",
+   "Caste category",
+   "Geography & social group",
+   "category",
+   "0%"
+  ],
+  [
+   "ID14",
+   "Religion of head",
+   "Geography & social group",
+   "category",
+   "0%"
+  ],
+  [
+   "ID9",
+   "Rural / urban / slum",
+   "Geography & social group",
+   "category",
+   "0%"
+  ],
+  [
+   "METRO",
+   "Lives in one of the 6 largest metro areas",
+   "Geography & social group",
+   "number",
+   "0%"
+  ],
+  [
+   "STATEID2",
+   "State (22 groups)",
+   "Geography & social group",
+   "category",
+   "0%"
+  ],
+  [
+   "URBAN",
+   "Urban location (2001 census)",
+   "Geography & social group",
+   "number",
+   "0%"
+  ],
+  [
+   "DE1",
+   "Any death in household",
+   "Health",
+   "number",
+   "2%"
+  ],
+  [
+   "EW9",
+   "Self-rated health of interviewed woman (1 = best ... 5 = worst)",
+   "Health",
+   "number",
+   "15%"
+  ],
+  [
+   "any_major_illness",
+   "Household has a person with a diagnosed major illness",
+   "Health",
+   "number",
+   "0%"
+  ],
+  [
+   "n_major_illness",
+   "Diagnosed major illnesses in household (count, health module)",
+   "Health",
+   "number",
+   "0%"
+  ],
+  [
+   "NADULTS",
+   "Adults aged 22+",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "NCHILD",
+   "Children aged 0-14",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "NMARRIEDF",
+   "Married women (count)",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "NMARRIEDM",
+   "Married men (count)",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "NPERSONS",
+   "Household size",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "NTEEN",
+   "Members aged 15-21",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "children_share",
+   "Share of members aged 0-14",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "dep_ratio",
+   "Dependency ratio ((<15 + 65+) / aged 15-64)",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "has_eligible_woman",
+   "Ever-married woman 15-49 interviewed (women's module available)",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "has_school_age_kids",
+   "Household has children aged 6-14",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "head_age",
+   "Age of household head",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "head_female",
+   "Household head is female",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "head_marital",
+   "Marital status of head",
+   "Household structure",
+   "category",
+   "0%"
+  ],
+  [
+   "n_children_0_5",
+   "Children aged 0-5",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "n_elderly_60p",
+   "Members aged 60+",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "share_female",
+   "Share of members who are female",
+   "Household structure",
+   "number",
+   "0%"
+  ],
+  [
+   "FM3",
+   "Household owns or cultivates land",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "ID15",
+   "Main income source of household",
+   "Occupation & employment",
+   "category",
+   "0%"
+  ],
+  [
+   "NAGWAGE",
+   "Members in agricultural wage work (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "NANIMAL",
+   "Members doing animal care (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "NBUSINESS",
+   "Members in family business (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "NFARM",
+   "Members working on family farm (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "NNONAG",
+   "Members in non-agricultural wage work (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "NSALARY",
+   "Members with salaried jobs (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "NWORK",
+   "Household members with any work (count)",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_agwage",
+   "Head is agricultural wage labourer",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_animal",
+   "Head does animal care",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_any",
+   "Head did any work",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_business",
+   "Head works in family business",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_farm",
+   "Head works on family farm",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_nonag",
+   "Head is non-agricultural wage worker",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "head_wk_salary",
+   "Head has a salaried job",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "share_female_working",
+   "Share of women 15-64 who work",
+   "Occupation & employment",
+   "number",
+   "2%"
+  ],
+  [
+   "share_working_adults",
+   "Share of adults 15-64 who work",
+   "Occupation & employment",
+   "number",
+   "1%"
+  ],
+  [
+   "workers_per_capita",
+   "Workers per household member",
+   "Occupation & employment",
+   "number",
+   "0%"
+  ],
+  [
+   "ME1",
+   "Member Mahila mandal",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME10",
+   "Voted 2004 election",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME11",
+   "Attend public meeting",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME12",
+   "Official in panchayat",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME2",
+   "Member Youth/Sports/Read",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME3",
+   "Member Union/Busns",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME4",
+   "Member Self Help",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME5",
+   "Member Credit/Savings",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME6",
+   "Member Relig/Social",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME7",
+   "Member Caste Assoc",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME8",
+   "Member Development/NGO",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "ME9",
+   "Member Cooperative",
+   "Social capital",
+   "number",
+   "0%"
+  ],
+  [
+   "SN1A",
+   "Netwk Medical",
+   "Social capital",
+   "number",
+   "1%"
+  ],
+  [
+   "SN2A",
+   "Netwk School",
+   "Social capital",
+   "number",
+   "1%"
+  ],
+  [
+   "SN3A",
+   "Netwk Govt service",
+   "Social capital",
+   "number",
+   "2%"
+  ],
+  [
+   "GR14",
+   "Woman has cash in hand",
+   "Women's status (gender)",
+   "number",
+   "15%"
+  ],
+  [
+   "GR15A",
+   "Family has a bank account",
+   "Women's status (gender)",
+   "number",
+   "16%"
+  ],
+  [
+   "GR15B",
+   "Woman's name on a bank account",
+   "Women's status (gender)",
+   "number",
+   "26%"
+  ],
+  [
+   "GR6F",
+   "Woman can visit health centre alone",
+   "Women's status (gender)",
+   "number",
+   "18%"
+  ],
+  [
+   "GR8F",
+   "Woman can visit local shop alone",
+   "Women's status (gender)",
+   "number",
+   "28%"
+  ],
+  [
+   "GR9",
+   "Woman practises purdah/ghunghat",
+   "Women's status (gender)",
+   "number",
+   "15%"
+  ]
+ ],
+ "versions": {
+  "python": "3.11.9",
+  "numpy": "2.0.2",
+  "pandas": "2.2.3",
+  "scikit-learn": "1.5.2",
+  "xgboost": "2.1.3",
+  "shap": "0.46.0"
+ },
+ "figs": {
+  "c13_poverty_line": [
+   1480,
+   919
+  ],
+  "c01_transitions": [
+   1600,
+   720
+  ],
+  "c02_feature_groups": [
+   1500,
+   1040
+  ],
+  "c03_escape_by_caste": [
+   1700,
+   960
+  ],
+  "c04_escape_by_education": [
+   1700,
+   960
+  ],
+  "c05_roc_curves": [
+   1320,
+   1120
+  ],
+  "c15_repeated_splits": [
+   1639,
+   960
+  ],
+  "c14_calibration": [
+   1240,
+   1000
+  ],
+  "c07_risk_groups": [
+   1600,
+   960
+  ],
+  "c08_shap_top10": [
+   1639,
+   1040
+  ],
+  "c09_shap_groups": [
+   1639,
+   1040
+  ],
+  "c10_shap_children": [
+   1240,
+   919
+  ],
+  "c11_shap_assets": [
+   1240,
+   919
+  ],
+  "c12_education_effect": [
+   1839,
+   919
+  ],
+  "app_screenshot": [
+   2400,
+   1425
+  ],
+  "c16_feature_selection": [
+   1480,
+   919
+  ],
+  "c17_workflow": [
+   2600,
+   1040
+  ],
+  "c18_confusion_all_models": [
+   3200,
+   880
+  ],
+  "c19_education_simple": [
+   1520,
+   919
+  ],
+  "exec_evidence": [
+   2316,
+   1370
+  ]
+ },
+ "run_dir": "C:/aucml/v3final5",
+ "quick_check": [
+  "$ python quick_check.py",
+  "Test households: 2,252   escaped: 1,559 (69.2%)   threshold: 0.645",
+  "ROC-AUC            : 0.722",
+  "Accuracy           : 0.696",
+  "Precision / recall / F1 (escaped)    : 0.796 / 0.755 / 0.775",
+  "Precision / recall / F1 (stayed poor): 0.506 / 0.564 / 0.533",
+  "Confusion matrix (rows = actual stayed poor / escaped, columns = predicted stayed poor / escaped):",
+  "[[ 391  302]",
+  " [ 382 1177]]",
+  "OK: these numbers match the ones saved by the notebook (outputs/key_numbers.json)."
+ ]
+}

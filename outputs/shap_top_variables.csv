@@ -1,0 +1,21 @@
+,mean_abs_SHAP,label,group
+n_children_0_5,0.19017051,Children aged 0-5,Household structure
+STATEID2,0.1845363,State (22 groups),Geography & social group
+HHASSETS,0.18071382,Household assets index (goods and housing),Assets & housing
+assets_per_capita,0.14601181,Asset index per household member,Assets & housing
+RC1A,0.09254534,Ration card type,Access to services
+GROUPS8,0.08394261,Caste/religion group (8 categories),Geography & social group
+has_school_age_kids,0.070352264,Household has children aged 6-14,Household structure
+share_female,0.06641775,Share of members who are female,Household structure
+head_age,0.06563144,Age of household head,Household structure
+FU9,0.04875028,LPG use,Access to services
+WA1,0.04661342,Water source: usual,Access to services
+ID15,0.044593282,Main income source of household,Occupation & employment
+HHED5M,0.044500392,Highest education of men 21+ (years),Education
+workers_per_capita,0.041108716,Workers per household member,Occupation & employment
+ID9,0.039868407,Rural / urban / slum,Geography & social group
+HQ1,0.038417816,Obs: House Type,Assets & housing
+GR14,0.037817188,Woman has cash in hand,Women's status (gender)
+n_elderly_60p,0.037259884,Members aged 60+,Household structure
+NPERSONS,0.03641736,Household size,Household structure
+CG11,0.031351473,Own: Electric fan,Assets & housing

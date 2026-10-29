@@ -1,0 +1,88 @@
+{
+ "STATEID2": {
+  "101": "Jammu & Kashmir",
+  "102": "Himachal Pradesh",
+  "105": "Uttarakhand",
+  "203": "Punjab",
+  "206": "Haryana",
+  "207": "Delhi",
+  "309": "Uttar Pradesh",
+  "310": "Bihar",
+  "320": "Jharkhand",
+  "408": "Rajasthan",
+  "422": "Chhattisgarh",
+  "423": "Madhya Pradesh",
+  "517": "Northeast",
+  "518": "Assam",
+  "519": "West Bengal",
+  "521": "Orissa",
+  "624": "Gujarat",
+  "627": "Maharashtra, Goa",
+  "728": "Andhra Pradesh",
+  "729": "Karnataka",
+  "732": "Kerala",
+  "733": "Tamil Nadu"
+ },
+ "GROUPS8": {
+  "1": "Brahmin",
+  "2": "High caste",
+  "3": "OBC",
+  "4": "Dalit",
+  "5": "Adivasi",
+  "6": "Muslim",
+  "7": "Sikh, Jain",
+  "8": "Christian"
+ },
+ "RC1A": {
+  "1": "BPL",
+  "2": "Standard/APL",
+  "3": "Antodaya"
+ },
+ "ID14": {
+  "1": "Hindu",
+  "2": "Muslim",
+  "3": "Christian",
+  "4": "Sikh",
+  "5": "Buddhist",
+  "6": "Jain",
+  "7": "Tribal",
+  "8": "Others",
+  "9": "None"
+ },
+ "ID15": {
+  "1": "Cultivation",
+  "2": "Allied agr",
+  "3": "Ag labour",
+  "4": "Non-Ag labour",
+  "5": "Artisan",
+  "6": "Petty trade",
+  "7": "Business",
+  "8": "Salaried",
+  "9": "Profession",
+  "10": "Pension/rent",
+  "11": "Others"
+ },
+ "FM3": {
+  "0": "No",
+  "1": "Yes"
+ },
+ "URBAN": {
+  "0": "Rural",
+  "1": "Urban"
+ },
+ "HQ1": {
+  "1": "Bungalow",
+  "2": "Shared walls",
+  "3": "Flat",
+  "4": "Chawl",
+  "5": "Slum housing",
+  "6": "Other"
+ },
+ "FU9": {
+  "0": "Fuel not used",
+  "1": "Mainly cooking",
+  "2": "Mainly lighting",
+  "3": "Mainly heating",
+  "4": "Combination"
+ }
+}

@@ -1,0 +1,5 @@
+Model,Accuracy,Precision (escaped),Recall (escaped),F1 (escaped),Precision (stayed poor),Recall (stayed poor),F1 (stayed poor),Macro-F1,ROC-AUC,True stayed,False escaped,False stayed,True escaped
+Logistic Regression,0.6776,0.787,0.7325,0.7588,0.4794,0.5541,0.5141,0.6364,0.6998,384,309,417,1142
+Random Forest,0.6927,0.7861,0.764,0.7749,0.5007,0.5325,0.5161,0.6455,0.7087,369,324,368,1191
+XGBoost,0.6963,0.7958,0.755,0.7749,0.5058,0.5642,0.5334,0.6541,0.722,391,302,382,1177
+Soft-vote ensemble (LR+RF+XGB),0.6949,0.7865,0.7678,0.777,0.5041,0.531,0.5172,0.6471,0.7187,368,325,362,1197

@@ -1,0 +1,3 @@
+Model,AUC with ration card,AUC without ration card
+Logistic Regression,0.6998,0.6964
+XGBoost,0.722,0.7148

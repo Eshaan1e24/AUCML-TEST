@@ -1,0 +1,4 @@
+,Target rule,n,Escape rate,ROC_AUC (test)
+0,Primary: continuing household (HHSPLITID=1),11146,0.6936,0.722
+1,Escaped only if ALL descendant households non-poor,11146,0.666,0.7271
+2,Escaped if ANY descendant household non-poor,11146,0.7163,0.7205

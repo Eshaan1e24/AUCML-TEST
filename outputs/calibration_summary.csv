@@ -1,0 +1,5 @@
+Model,mean_predicted,observed_rate,Brier,calib_intercept,calib_slope,Brier_skill_score
+Logistic Regression,0.6893,0.6923,0.1889,0.0975,0.8814,0.1134
+Random Forest,0.6874,0.6923,0.1871,-0.1209,1.2044,0.1216
+XGBoost,0.6898,0.6923,0.1833,-0.0342,1.0676,0.1394
+Soft-vote ensemble (LR+RF+XGB),0.6888,0.6923,0.1842,-0.0938,1.1598,0.1352

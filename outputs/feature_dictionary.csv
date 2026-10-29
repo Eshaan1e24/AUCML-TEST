@@ -1,0 +1,139 @@
+variable,group,type,label,missing_share,used
+FU1,Access to services,num,HH electricity,0.010766194150367845,True
+FU2,Access to services,num,Meals per day,0.011753095280818231,True
+FU4,Access to services,nom,HH chulha type,0.013726897541719003,True
+FU9,Access to services,nom,LPG use,0.06504575632513906,True
+MM1A,Access to services,num,Radio regular Men,0.032298582451103536,True
+MM1B,Access to services,num,Radio regular Women,0.026018302530055624,True
+MM2A,Access to services,num,Newspaper regular Men,0.03642562354207787,True
+MM2B,Access to services,num,Newspaper regular Women,0.03131168132065315,True
+MM3A,Access to services,num,TV regular Men,0.038668580656737846,True
+MM3B,Access to services,num,TV regular Women,0.029696752198097972,True
+RC1,Access to services,num,Ration card,8.971828458639871e-05,True
+RC1A,Access to services,nom,Ration card type,0.14965009869011303,True
+SA4,Access to services,nom,Household Toilet,0.006190561636461511,True
+WA1,Access to services,nom,Water source: usual,0.0008971828458639871,True
+WA10,Access to services,num,Purify water,0.010138166158263054,True
+WA2,Access to services,num,Water within house,0.0008971828458639871,True
+CG1,Assets & housing,nom,House own/rent,8.971828458639871e-05,True
+CG10,Assets & housing,num,Own: Clock/watch,0.002153238830073569,True
+CG11,Assets & housing,num,Own: Electric fan,0.0016149291225551767,True
+CG12,Assets & housing,num,Own: Chair/table,0.0017046474071415756,True
+CG13,Assets & housing,num,Own: Cot,0.0018840839763143728,True
+CG14,Assets & housing,num,Own: Telephone,0.0032298582451103534,True
+CG15,Assets & housing,num,Own: Cell phone,0.0035887313834559484,True
+CG16,Assets & housing,num,Own: Refrigerator,0.0038578862372151443,True
+CG17,Assets & housing,num,Own: Pressure cooker,0.007984927328189485,True
+CG18,Assets & housing,num,Own: Car,0.03552844069621389,True
+CG19,Assets & housing,num,Own: Air conditioner,0.036335905257491474,True
+CG2,Assets & housing,num,Own: Cycle/bicycle,0.001525210837968778,True
+CG20,Assets & housing,num,Own: Washing machine,0.03660506011125067,True
+CG21,Assets & housing,num,Own: Computer,0.036963933249596265,True
+CG22,Assets & housing,num,Own: Credit card,0.03839942580297865,True
+CG23,Assets & housing,num,Own: 2 clothes,0.003678449668042347,True
+CG24,Assets & housing,num,Own: Footwear,0.003678449668042347,True
+CG3,Assets & housing,num,Own: Sewing machine,0.0019738022609007717,True
+CG4,Assets & housing,num,Own: Generator set,0.0019738022609007717,True
+CG5,Assets & housing,num,Own: Mixer/grinder,0.002153238830073569,True
+CG6,Assets & housing,num,Own: Motor cycle,0.0020635205454871703,True
+CG7,Assets & housing,num,Own: B/W TV,0.002332675399246366,True
+CG8,Assets & housing,num,Own: Colour TV,0.0019738022609007717,True
+CG9,Assets & housing,num,Own: Air cooler,0.002691548537591961,True
+HHASSETS,Assets & housing,num,Household assets index (goods and housing),0.0,True
+HQ1,Assets & housing,nom,Obs: House Type,0.010676475865781446,True
+HQ4,Assets & housing,nom,Obs: Wall type,0.008433518751121478,True
+HQ5,Assets & housing,nom,Obs: Roof type,0.008254082181948681,True
+HQ6,Assets & housing,nom,Obs: Floor type,0.008254082181948681,True
+SA1,Assets & housing,num,Number of rooms,0.02269872600035887,True
+SA2,Assets & housing,nom,Cooking place,0.002691548537591961,True
+SA3,Assets & housing,num,Household servant,0.010766194150367845,True
+assets_per_capita,Assets & housing,num,Asset index per household member,0.0,True
+rooms_per_person,Assets & housing,num,Rooms per household member,0.02269872600035887,True
+EW7,Education,num,Education of interviewed woman (years),0.16804234703032478,True
+HHED2,Education,num,Any adult in household is literate,0.0018840839763143728,True
+HHED5ADULT,Education,num,Highest education of any adult 21+ (years),0.001256055984209582,True
+HHED5F,Education,num,Highest education of women 21+ (years),0.010945630719540642,True
+HHED5M,Education,num,Highest education of men 21+ (years),0.04620491656199534,True
+ID20,Education,num,Education of head's father,0.723667683473892,False
+child_enrol_rate,Education,num,"School enrolment rate, children 6-14",0.3543872241162749,True
+educ_mean_adults,Education,num,"Mean years of schooling, adults 21+",0.002153238830073569,True
+head_educ_years,Education,num,Years of schooling of head,0.0037681679526287456,True
+head_literate,Education,num,Head is literate,0.001166337699623183,True
+share_female_literate_15p,Education,num,"Literacy share, women 15+",0.006100843351875112,True
+share_literate_15p,Education,num,"Literacy share, members 15+",0.0009869011304503858,True
+DB1,Finance & social protection,num,N loans last 5 yrs,8.971828458639871e-05,True
+DB3A,Finance & social protection,num,Land sold to pay,0.001256055984209582,True
+DB3B,Finance & social protection,num,Jewelery sold to pay,0.0014354925533823794,True
+DB5A,Finance & social protection,num,Debt with shopkeeper,0.0007177462766911897,True
+IN15,Finance & social protection,num,Govt housing,0.01040732101202225,True
+IN17,Finance & social protection,nom,Better off last 10 yrs,0.0010766194150367845,True
+RC3,Finance & social protection,num,Health insurance,0.001525210837968778,True
+RC4,Finance & social protection,num,LIC/Life insurance,0.001166337699623183,True
+RC5,Finance & social protection,num,KISAN credit card,0.0008074645612775884,True
+GROUPS8,Geography & social group,nom,Caste/religion group (8 categories),0.0,True
+ID13,Geography & social group,nom,Caste category,0.0,True
+ID14,Geography & social group,nom,Religion of head,0.0,True
+ID9,Geography & social group,nom,Rural / urban / slum,0.0,True
+METRO,Geography & social group,num,Lives in one of the 6 largest metro areas,0.0,True
+STATEID2,Geography & social group,nom,State (22 groups),0.0,True
+URBAN,Geography & social group,num,Urban location (2001 census),0.0,True
+DE1,Health,num,Any death in household,0.023506190561636463,True
+EW9,Health,num,Self-rated health of interviewed woman (1 = best ... 5 = worst),0.15090615467432264,True
+any_major_illness,Health,num,Household has a person with a diagnosed major illness,0.0,True
+n_major_illness,Health,num,"Diagnosed major illnesses in household (count, health module)",0.0,True
+NADULTS,Household structure,num,Adults aged 22+,0.0,True
+NCHILD,Household structure,num,Children aged 0-14,0.0,True
+NMARRIEDF,Household structure,num,Married women (count),0.0,True
+NMARRIEDM,Household structure,num,Married men (count),0.0,True
+NPERSONS,Household structure,num,Household size,0.0,True
+NTEEN,Household structure,num,Members aged 15-21,0.0,True
+children_share,Household structure,num,Share of members aged 0-14,0.0,True
+dep_ratio,Household structure,num,Dependency ratio ((<15 + 65+) / aged 15-64),0.0,True
+has_eligible_woman,Household structure,num,Ever-married woman 15-49 interviewed (women's module available),0.0,True
+has_school_age_kids,Household structure,num,Household has children aged 6-14,0.0,True
+head_age,Household structure,num,Age of household head,0.0,True
+head_female,Household structure,num,Household head is female,0.0,True
+head_marital,Household structure,nom,Marital status of head,0.0,True
+n_children_0_5,Household structure,num,Children aged 0-5,0.0,True
+n_elderly_60p,Household structure,num,Members aged 60+,0.0,True
+share_female,Household structure,num,Share of members who are female,0.0,True
+FM3,Occupation & employment,num,Household owns or cultivates land,8.971828458639871e-05,True
+ID15,Occupation & employment,nom,Main income source of household,0.0,True
+NAGWAGE,Occupation & employment,num,Members in agricultural wage work (count),0.0,True
+NANIMAL,Occupation & employment,num,Members doing animal care (count),0.0,True
+NBUSINESS,Occupation & employment,num,Members in family business (count),0.0,True
+NFARM,Occupation & employment,num,Members working on family farm (count),0.0,True
+NNONAG,Occupation & employment,num,Members in non-agricultural wage work (count),0.0,True
+NSALARY,Occupation & employment,num,Members with salaried jobs (count),0.0,True
+NWORK,Occupation & employment,num,Household members with any work (count),0.0,True
+head_wk_agwage,Occupation & employment,num,Head is agricultural wage labourer,0.0,True
+head_wk_animal,Occupation & employment,num,Head does animal care,0.0,True
+head_wk_any,Occupation & employment,num,Head did any work,0.0,True
+head_wk_business,Occupation & employment,num,Head works in family business,0.0,True
+head_wk_farm,Occupation & employment,num,Head works on family farm,0.0,True
+head_wk_nonag,Occupation & employment,num,Head is non-agricultural wage worker,0.0,True
+head_wk_salary,Occupation & employment,num,Head has a salaried job,0.0,True
+share_female_working,Occupation & employment,num,Share of women 15-64 who work,0.017136192356002153,True
+share_working_adults,Occupation & employment,num,Share of adults 15-64 who work,0.008254082181948681,True
+workers_per_capita,Occupation & employment,num,Workers per household member,0.0,True
+ME1,Social capital,num,Member Mahila mandal,0.0017046474071415756,True
+ME10,Social capital,num,Voted 2004 election,0.001525210837968778,True
+ME11,Social capital,num,Attend public meeting,0.0018840839763143728,True
+ME12,Social capital,num,Official in panchayat,0.004755069083079132,True
+ME2,Social capital,num,Member Youth/Sports/Read,0.0008971828458639871,True
+ME3,Social capital,num,Member Union/Busns,0.0010766194150367845,True
+ME4,Social capital,num,Member Self Help,0.0010766194150367845,True
+ME5,Social capital,num,Member Credit/Savings,0.001166337699623183,True
+ME6,Social capital,num,Member Relig/Social,0.0009869011304503858,True
+ME7,Social capital,num,Member Caste Assoc,0.0010766194150367845,True
+ME8,Social capital,num,Member Development/NGO,0.0014354925533823794,True
+ME9,Social capital,num,Member Cooperative,0.0019738022609007717,True
+SN1A,Social capital,num,Netwk Medical,0.009958729589090257,True
+SN2A,Social capital,num,Netwk School,0.013009151265027812,True
+SN3A,Social capital,num,Netwk Govt service,0.01875112147855733,True
+GR14,Women's status (gender),num,Woman has cash in hand,0.1531491117889826,True
+GR15A,Women's status (gender),num,Family has a bank account,0.15700699802619775,True
+GR15B,Women's status (gender),num,Woman's name on a bank account,0.26143908128476584,True
+GR6F,Women's status (gender),num,Woman can visit health centre alone,0.1798851605957294,True
+GR8F,Women's status (gender),num,Woman can visit local shop alone,0.27642203481069444,True
+GR9,Women's status (gender),num,Woman practises purdah/ghunghat,0.153238830073569,True

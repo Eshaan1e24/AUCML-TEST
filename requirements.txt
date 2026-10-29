@@ -1,0 +1,21 @@
+# Exact versions used for the reported results (Python 3.11).
+# These are the versions used for the reported numbers. The result tables were also identical with scikit-learn 1.6.1 and XGBoost 2.1.4.
+numpy==2.0.2
+pandas==2.2.3
+scipy==1.14.1
+scikit-learn==1.5.2
+xgboost==2.1.3
+shap==0.46.0
+pyreadstat==1.2.8
+matplotlib==3.9.2
+joblib==1.6.0
+numba==0.60.0
+statsmodels==0.14.4
+# to run the notebook and the demo app
+jupyter
+nbconvert
+ipykernel
+streamlit==1.40.2
+python-pptx
+# optional: only for make_exec_evidence.py (screenshot of the executed notebook)
+playwright
